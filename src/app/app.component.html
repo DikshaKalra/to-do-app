@@ -1,0 +1,13 @@
+<!-- <body style="
+    background-color:#e6f9ff;
+    background-repeat: repeat;
+  "> -->
+<app-header></app-header>
+<main>
+    
+<app-to-do-create (ToDoCreated)="onPostAdded($event)" ></app-to-do-create>
+<br/>
+<app-to-do-list [posts]="storedPosts"></app-to-do-list>
+
+</main>
+<!-- </body> -->
